@@ -13,6 +13,7 @@ const Products = ({ products, onAddToCart }) => {
   return (
     <main className={classes.content} id="shopSection">
       <Typography
+        variant='h2'
         className={classes.sectionHeading}
         style={{ marginBottom: "24px", textAlign: "center" }}
       >

@@ -30,8 +30,7 @@ const Product = ({ product, onAddToCart }) => {
           <Typography
             className={classes.productName}
             gutterBottom
-            variant="h5"
-            component="h2"
+            variant="h3"
           >
             {product.name}
           </Typography>
@@ -39,7 +38,6 @@ const Product = ({ product, onAddToCart }) => {
             className={classes.productPrice}
             gutterBottom
             variant="h5"
-            component="h2"
           >
             ${product.price.formatted} /lb
           </Typography>

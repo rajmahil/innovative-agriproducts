@@ -11,11 +11,16 @@ const ValueProp = () => {
     <Card container className={classes.valuePropsContainer}>
       <Grid container style={{ marginBottom: "90px", maxWidth: "1240px" }}>
         <Grid item xs={12} md={6} style={{ overflow: "none" }}>
-          <img src={valueGarlicImage} style={{ width: "100%" }} />
+          <img
+            src={valueGarlicImage}
+            alt="innovative-agriproducts-sask"
+            style={{ width: "100%" }}
+          />
         </Grid>
         <Grid item xs={12} md={6} className={classes.valuePropsParagraph}>
           <Typography
             className={classes.sectionHeading}
+            variant="h2"
             style={{ color: "#fff" }}
           >
             Our Philosophy
@@ -23,25 +28,22 @@ const ValueProp = () => {
           <Typography
             className={classes.sectionParagraph}
             style={{ color: "#fff" }}
+            variant="body1"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
-            fringilla aliquam. Nullam magna massa, ullamcorper non libero et,
-            tempus vehicula quam. Vestibulum molestie turpis eget sagittis
-            convallis. Ut pharetra vestibulum enim, semper blandit orci ultrices
-            ac. Donec turpis velit, cursus a nisl et, bibendum dictum diam. Sed
-            bibendum porttitor leo, in tincidunt ante pellentesque vel. Cras
-            suscipit maximus tortor sit amet feugiat. Sed vitae nisi gravida,
-            facilisis metus a, lobortis erat. Phasellus rhoncus ac dui ac
-            condimentum. Quisque eu lacus nec dui aliquet porttitor vel nec
-            quam. Donec aliquet eros vitae dui aliquam tristique. Vivamus eget
-            lorem vel nibh ornare sollicitudin et sit amet felis. Sed pharetra
-            massa nec sem fringilla, at egestas massa laoreet. Suspendisse
-            potenti. Curabitur ultrices, nisi in dictum vulputate, lacus urna
-            viverra tellus, quis venenatis risus massa at libero. Curabitur et
-            est id nisl ultricies elementum. Ut eleifend id eros sit amet
-            tincidunt. In in massa nisl. Phasellus ultrices bibendum nulla
-            ultricies euismod. Duis rutrum nibh sed placerat ultricies. Duis
-            hendrerit id nisi id facilisis.
+            Our goal is less travel, less waste, and more freshness. Typically,
+            large amounts of food is wasted in distribution, warehousing, and
+            merchandising. We believe in delivering straight from our farm to
+            your family's kitchen, reducing enormous food waste. Being located
+            close to home means less fuel and generating fewer greenhouse gases.
+            On average, locally grown fresh food is generally healthier, more
+            nutritious, and better-tasting due to reduced transit times. Food
+            imported from afar is older and waits in distribution facilities for
+            a long time before reaching your grocery store. The more steps
+            between you and the source of your food, the greater the risk of
+            contamination. Food cultivated in distant locations may pose food
+            safety concerns during harvesting, washing, transportation, and
+            distribution. At Innovative Agriproducts, we ensure our food is
+            grown safely and without the use of pesticides or herbicides.
           </Typography>
           <HashLink
             smooth
@@ -75,10 +77,9 @@ const ValueProp = () => {
             Fresh
           </Typography>
           <Typography variant="body1" className={classes.propsParagraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
-            fringilla aliquam. Nullam magna massa, ullamcorper non libero et,
-            tempus vehicula quam. Vestibulum molestie turpis eget sagittis
-            convallis. Ut pharetra vestibulum enim.
+            Producing sustainable fresh food is our goal. We ensure our food is
+            grown safely and picked fresh without the use of pesticides or
+            herbicides.
           </Typography>
         </Grid>
         <Grid item className={classes.propsContentWrap} xs={12} md={4}>
@@ -87,10 +88,9 @@ const ValueProp = () => {
             Local
           </Typography>
           <Typography variant="body1" className={classes.propsParagraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
-            fringilla aliquam. Nullam magna massa, ullamcorper non libero et,
-            tempus vehicula quam. Vestibulum molestie turpis eget sagittis
-            convallis. Ut pharetra vestibulum enim.
+            Locally grown nutrient-rich food, straight from our farm to your
+            family's kitchen. Reducing carbon emissions, improving food
+            security, and supporting the local economy.
           </Typography>
         </Grid>
         <Grid item className={classes.propsContentWrap} xs={12} md={4}>
@@ -99,10 +99,9 @@ const ValueProp = () => {
             Ethical
           </Typography>
           <Typography variant="body1" className={classes.propsParagraph}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
-            fringilla aliquam. Nullam magna massa, ullamcorper non libero et,
-            tempus vehicula quam. Vestibulum molestie turpis eget sagittis
-            convallis. Ut pharetra vestibulum enim.
+            We believe in and value ethical farming. Therefore, we use
+            traditional methods that benefit the environment, animals, farmers,
+            and health.
           </Typography>
         </Grid>
       </Grid>

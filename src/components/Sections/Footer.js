@@ -23,7 +23,7 @@ const Footer = () => {
         >
           <img
             src={rubenLogoWhite}
-            alt="Innovative Agriproducts Inc"
+            alt="Innovative Agriproducts Inc Saskatoon"
             style={{ width: "250px" }}
           />
         </NavHashLink>

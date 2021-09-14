@@ -15,6 +15,8 @@ export default makeStyles((theme) => ({
     borderRadius: "0px",
     backgroundImage: `url(${garlicImageHero})`,
 
+    WebkitAnimation: "bounceIn 2s",
+
     [theme.breakpoints.down("1080")]: {
       flexDirection: "column-reverse",
     },
@@ -59,7 +61,7 @@ export default makeStyles((theme) => ({
     fontFamily: "rift, sans-serif",
     fontWeight: "700",
     fontStyle: "normal",
-    fontSize: "4.6em",
+    fontSize: "4.1em",
     textAlign: "center",
     color: "#fff",
 
@@ -322,7 +324,7 @@ export default makeStyles((theme) => ({
     fontFamily: "acumin-pro, sans-serif",
     fontWeight: "300",
     fontStyle: "normal",
-    fontSize: "1em",
+    fontSize: "1.1em",
     lineHeight: "24px",
   },
 

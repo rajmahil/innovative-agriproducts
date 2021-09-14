@@ -9,16 +9,16 @@ const Hero = () => {
     <Card className={classes.heroContainer} id="heroSection">
       <div className={classes.heroContentWrap}>
         <Typography className={classes.heroHeading} variant="h1">
-          Awesome homemade garlic for sale, buy now!
+          Locally Grown, Sustainably Farmed, Freshly Picked
         </Typography>
         <Typography
           className={classes.heroSubtitle}
           variant="subtitle1"
           gutterBottom
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel urna
-          eu libero euismod accumsan. Phasellus aliquet bibendum orci, a
-          interdum eros interdum nec.
+          We pride ourselves in producing nutrient-rich garlic, grown locally
+          here in Saskatoon. Directly from our farm to your family's kitchen,
+          click "Shop Now" to place your order!
         </Typography>
         <div
           style={{
