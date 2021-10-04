@@ -1,9 +1,11 @@
 import { Button, Card, Typography } from "@material-ui/core";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import useStyles from "./styles";
 import { HashLink } from "react-router-hash-link";
+
 const About = () => {
   const classes = useStyles();
+
   return (
     <Card className={classes.aboutContainer} id="aboutSection">
       <div className={classes.sectionContentWrap}>

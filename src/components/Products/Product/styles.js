@@ -17,6 +17,40 @@ export default makeStyles((theme) => ({
     padding: "12px 28px 28px 28px",
   },
 
+  addToCartMessage: {
+    position: "fixed",
+    bottom: "0",
+    left: "50%",
+    width: "250px",
+    padding: "10px 16px",
+    marginLeft: "-125px",
+    marginBottom: "20px",
+    background: "#000",
+    zIndex: "10000",
+    textAlign: "center",
+    color: "#fff",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
+  },
+
+  addToCartText: {
+    color: "#fff",
+    fontSize: "1.4em",
+    fontFamily: "rift, sans-serif",
+    fontWeight: "700",
+  },
+
+  addtoCartIcon: {
+    backgroundColor: "#fff",
+    fontSize: "2.5em",
+    lineHeight: "0",
+    height: "35px",
+    width: "35px",
+    cursor: "pointer",
+  },
+
   quantityNum: {
     fontFamily: "rift, sans-serif",
     fontWeight: "600",

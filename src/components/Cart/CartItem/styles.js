@@ -52,7 +52,7 @@ export default makeStyles((theme) => ({
     fontFamily: "rift, sans-serif",
     fontWeight: "600",
     fontStyle: "normal",
-    fontSize: "1.6em",
+    fontSize: "1.4em",
     marginLeft: "10px",
     marginRight: "10px",
   },

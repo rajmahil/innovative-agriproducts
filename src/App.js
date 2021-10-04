@@ -17,6 +17,8 @@ import Contact from "./components/Sections/Contact";
 import PhotoSlider from "./components/Sections/PhotoSlider/PhotoSlider";
 import PhotoSection from "./components/Sections/PhotoSection";
 import { Helmet } from "react-helmet";
+import aboutRuben from "./Images/aboutRuben.png";
+import MapEmbedd from "./components/Sections/MapEmbedd";
 
 const App = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -101,8 +103,13 @@ const App = () => {
           <Route exact path="/">
             <ScrollToTop />
             <Helmet>
-              <title>HomePage</title>
-              <meta name="description" content="Helmet application" />
+              <title>
+                Innovative Agriproducts | Fresh food in Saskatoon, SK
+              </title>
+              <meta
+                name="description"
+                content="Less travel, less waste, and more freshness is our motto. We pride ourselves in producing nutrient-rich garlic, grown locally here in Saskatoon. Directly from our farm to your family's kitchen."
+              />
             </Helmet>
             <Sidebar toggle={handleToggle} mobileOpen={mobileOpen} />
             <Hero />
@@ -116,13 +123,20 @@ const App = () => {
               handleUpdateCartQty
             />
             <PhotoSection />
+
             <Contact />
           </Route>
           <Route exact path="/cart">
             <ScrollToTop />
             <Helmet>
-              <title>Cart Page</title>
-              <meta name="description" content="Helmet application" />
+              <title>
+                Your Cart | Innovative Agriproducts | Fresh food in Saskatoon,
+                SK SK
+              </title>
+              <meta
+                name="description"
+                content="Less travel, less waste, and more freshness is our motto. We pride ourselves in producing nutrient-rich garlic, grown locally here in Saskatoon. Directly from our farm to your family's kitchen."
+              />
             </Helmet>
             <Cart
               cart={cart}
@@ -134,8 +148,13 @@ const App = () => {
           <Route path="/checkout" exact>
             <ScrollToTop />
             <Helmet>
-              <title>Checkout</title>
-              <meta name="description" content="Helmet application" />
+              <title>
+                Checkout | Innovative Agriproducts | Fresh food in Saskatoon, SK
+              </title>
+              <meta
+                name="description"
+                content="Less travel, less waste, and more freshness is our motto. We pride ourselves in producing nutrient-rich garlic, grown locally here in Saskatoon. Directly from our farm to your family's kitchen."
+              />
             </Helmet>
             <Checkout
               cart={cart}

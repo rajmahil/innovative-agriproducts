@@ -33,32 +33,75 @@ const Footer = () => {
           textAlign: "center",
           paddingBottom: "45px",
           display: "flex",
+          flexDirection: "column",
           flexWrap: "wrap",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <Typography
-          component={Link}
+        <div
           style={{
-            textDecoration: "none",
-            color: "#fff",
-            margin: "10px",
+            marginBottom: "20px",
+            flexWrap: "wrap",
+            display: "flex",
+            flexDirection: "row",
+            flexWrap: "wrap",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
-          Emial: info@yourdomain.com
+          <Typography
+            component={Link}
+            to={{ pathname: "mailto:info@innovativeagriproducts.ca" }}
+            target="_blank"
+            style={{
+              textDecoration: "none",
+              color: "#fff",
+              margin: "10px",
+            }}
+          >
+            Email: info@innovativeagriproducts.ca
+          </Typography>
+          <Typography
+            component={Link}
+            to={{ pathname: "tel:3066123105" }}
+            target="_blank"
+            style={{
+              textDecoration: "none",
+              color: "#fff",
+              margin: "10px",
+            }}
+          >
+            Phone: (306) 954-6829
+          </Typography>
+        </div>
+        <Typography
+          style={{
+            color: "#fff",
+            fontWeight: "600",
+          }}
+        >
+          Farm/Pick up Location Address:
         </Typography>
         <Typography
           component={Link}
+          to={{
+            pathname:
+              "https://www.google.com/maps/place/Haight+Rd,+Saskatchewan+S0K+0Y0/@52.0707119,-106.5296132,17z/data=!3m1!4b1!4m5!3m4!1s0x5304f26a49204845:0x4e29c5084489d170!8m2!3d52.0707086!4d-106.5274245",
+          }}
+          target="_blank"
           style={{
             textDecoration: "none",
             color: "#fff",
             margin: "10px",
+            cursor: "pointer",
           }}
         >
-          Phone: (306) 716-3130
+          NO: 30665 Haight Road (RGE Road 3044), <br />
+          Corman Park, SK
         </Typography>
       </div>
+
       <Typography
         className={classes.footerSections}
         style={{ fontWeight: "300", fontSize: "1.1em" }}

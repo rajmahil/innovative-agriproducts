@@ -163,7 +163,7 @@ export default makeStyles((theme) => ({
   sidebarWrap: {
     height: "100vh",
     width: "100%",
-    background: "fff",
+    background: "#fff",
     zIndex: "100",
     position: "fixed",
     transition: "0.3s ease-in-out",
@@ -218,6 +218,7 @@ export default makeStyles((theme) => ({
     textAlign: "left",
     backgroundImage: `url(${aboutRuben})`,
     backgroundRepeat: "no-repeat",
+    backgroundPosition: "left",
 
     [theme.breakpoints.down("1280")]: {
       backgroundPositionX: "-150px",
@@ -336,23 +337,35 @@ export default makeStyles((theme) => ({
     },
   },
 
+  columnOne: {
+    width: "100%",
+  },
+  columnTwo: {
+    width: "auto",
+    position: "absolute",
+    right: "8%",
+
+    [theme.breakpoints.down("1280")]: {
+      position: "static",
+      padding: "24px",
+    },
+  },
+
   contactSection: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     height: "800px",
-    padding: "90px 45px",
-    backgroundImage: `url(${contactSectionBg})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
     borderRadius: "0px",
 
     [theme.breakpoints.down("1280")]: {
-      padding: "45px 45px",
+      padding: "0px 45px",
+      flexDirection: "column",
+      height: "auto",
     },
 
     [theme.breakpoints.down("1180")]: {
-      padding: "45px 18px",
+      padding: "0px 18px",
     },
 
     [theme.breakpoints.down("480")]: {
@@ -364,13 +377,18 @@ export default makeStyles((theme) => ({
 
   formWrap: {
     background: "#fff",
-    padding: "42px",
-    boxShadow: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
-    width: "500px",
+    padding: "50px",
+    width: "550px",
+    boxShadow: "rgba(149, 157, 165, 0.5) 0px 8px 24px",
     textAlign: "center",
 
+    [theme.breakpoints.down("1280")]: {
+      boxShadow: "none",
+    },
+
     [theme.breakpoints.down("480")]: {
-      padding: "45px 18px",
+      padding: "45px 10px",
+      width: "100%",
     },
   },
 

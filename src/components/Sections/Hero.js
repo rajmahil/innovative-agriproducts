@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Card, Grid, Typography, Button } from "@material-ui/core";
 import useStyles from "./styles";
 import { HashLink } from "react-router-hash-link";
+import { motion } from "framer-motion";
+import Slide from "@material-ui/core/Slide";
 
 const Hero = () => {
   const classes = useStyles();
+
   return (
     <Card className={classes.heroContainer} id="heroSection">
-      <div className={classes.heroContentWrap}>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", duration: 0.8 }}
+        className={classes.heroContentWrap}
+      >
         <Typography className={classes.heroHeading} variant="h1">
           Locally Grown, Sustainably Farmed, Freshly Picked
         </Typography>
@@ -53,7 +61,7 @@ const Hero = () => {
             Contact Us
           </HashLink>
         </div>
-      </div>
+      </motion.div>
     </Card>
   );
 };

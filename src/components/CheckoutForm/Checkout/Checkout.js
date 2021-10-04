@@ -24,6 +24,7 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   const [activeStep, setActiveStep] = useState(0);
   const [shippingData, setShippingData] = useState({});
   const [shippingPrice, setshippingPrice] = useState(0);
+  const [pickUp, setPickUp] = useState("");
 
   const classes = useStyles();
   const history = useHistory();
@@ -52,8 +53,11 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
   const next = (data) => {
     setShippingData(data);
     setshippingPrice(data.shippingPrice.price.raw);
+    setPickUp(data.pickupTime);
     nextStep();
   };
+
+  console.log(shippingData);
 
   let Confirmation = () =>
     order.customer ? (
@@ -65,7 +69,9 @@ const Checkout = ({ cart, onCaptureCheckout, order, error }) => {
           </Typography>
           <Divider className={classes.divider} />
           <Typography variant="subtitle2">
-            Order ref: {order.customer_reference}
+            Your order will be available for pick up on {pickUp}, at NO: 30665
+            Haight Road (RGE Road 3044), Corman Park, SK <br /> <br /> Order
+            ref: {order.customer_reference}
           </Typography>
         </div>
         <br />

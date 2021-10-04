@@ -9,6 +9,7 @@ import {
 import useStyles from "./styles";
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import MapEmbedd from "./MapEmbedd";
 
 const Contact = () => {
   const classes = useStyles();
@@ -41,70 +42,79 @@ const Contact = () => {
 
   return (
     <Card className={classes.contactSection} id="contactSection">
-      <div className={classes.formWrap}>
-        <Typography
-          variant="h2"
-          className={classes.sectionHeading}
-          style={{ paddingBottom: "0px" }}
-        >
-          Contact Us
-        </Typography>
-        <Typography
-          className={classes.sectionParagraph}
-          variant="subtitle1"
-          style={{ fontSize: "1em", lineHeight: "22px", marginBottom: "22px" }}
-        >
-          We promise to respond within 24 hours. You can also reach us as
-          info@website.com or 306-123-4567
-        </Typography>
-        {!formSub && (
-          <form onSubmit={sendEmail} style={{ width: "100%" }}>
-            <input
-              className={classes.formInputField}
-              required
-              placeholder="Your Name"
-              name="name"
-              type="text"
-            />
-            <input
-              className={classes.formInputField}
-              required
-              placeholder="Your Email"
-              name="email"
-              type="email"
-            />
-            <input
-              className={classes.formInputField}
-              required
-              placeholder="Your Phone"
-              name="phone"
-              type="tel"
-            />
-            <textarea
-              className={classes.formTextArea}
-              required
-              placeholder="Your Message"
-              name="message"
-            />
-            <Button type="submit" className={classes.mainButton}>
-              Send Message
-            </Button>
-          </form>
-        )}
-        {formSub && (
-          <div style={{ padding: "18px", background: "#000" }}>
-            {successMessage && (
-              <Typography style={{ color: "#fff" }}>
-                Your message has been sent!
-              </Typography>
-            )}
-            {errorMessage && (
-              <Typography style={{ color: "#fff" }}>
-                Error! Your message couldn't be sent.
-              </Typography>
-            )}
-          </div>
-        )}
+      <div className={classes.columnOne}>
+        <MapEmbedd />
+      </div>
+      <div className={classes.columnTwo}>
+        <div className={classes.formWrap}>
+          <Typography
+            variant="h2"
+            className={classes.sectionHeading}
+            style={{ paddingBottom: "0px" }}
+          >
+            Contact Us
+          </Typography>
+          <Typography
+            className={classes.sectionParagraph}
+            variant="subtitle1"
+            style={{
+              fontSize: "1em",
+              lineHeight: "22px",
+              marginBottom: "22px",
+            }}
+          >
+            We promise to respond within 48 hours. You can also reach us as
+            info@innovativeagriproducts.ca or (306) 954-6829
+          </Typography>
+          {!formSub && (
+            <form onSubmit={sendEmail} style={{ width: "100%" }}>
+              <input
+                className={classes.formInputField}
+                required
+                placeholder="Your Name"
+                name="name"
+                type="text"
+              />
+              <input
+                className={classes.formInputField}
+                required
+                placeholder="Your Email"
+                name="email"
+                type="email"
+              />
+              <input
+                className={classes.formInputField}
+                required
+                placeholder="Your Phone"
+                name="phone"
+                type="tel"
+              />
+              <textarea
+                className={classes.formTextArea}
+                required
+                placeholder="Your Message"
+                name="message"
+              />
+              <Button type="submit" className={classes.mainButton}>
+                Send Message
+              </Button>
+            </form>
+          )}
+          {formSub && (
+            <div style={{ padding: "18px", background: "#000" }}>
+              {successMessage && (
+                <Typography style={{ color: "#fff" }}>
+                  Your message has been sent!
+                </Typography>
+              )}
+              {errorMessage && (
+                <Typography style={{ color: "#fff" }}>
+                  Error! Your message couldn't be sent.
+                </Typography>
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </Card>
   );

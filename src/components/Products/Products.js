@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-
 import Product from "./Product/Product";
 import useStyles from "./styles";
 import { Typography } from "@material-ui/core";
@@ -13,11 +12,20 @@ const Products = ({ products, onAddToCart }) => {
   return (
     <main className={classes.content} id="shopSection">
       <Typography
-        variant='h2'
+        variant="h2"
         className={classes.sectionHeading}
-        style={{ marginBottom: "24px", textAlign: "center" }}
+        style={{ marginBottom: "0", textAlign: "center" }}
       >
         Our Products
+      </Typography>
+      <Typography
+        variant="p"
+        style={{ marginBottom: "24px", maxWidth: "800px", textAlign: "center" }}
+        className={classes.sectionParagraph}
+      >
+        Orders are currently available for pickup by appointment at NO: 30665
+        Haight Road (RGE Road 3044), Corman Park, SK. Select your pick up time
+        during checkout!
       </Typography>
       <Grid
         container

@@ -27,4 +27,13 @@ export default makeStyles((theme) => ({
     lineHeight: "50px",
     paddingBottom: "8px",
   },
+  sectionParagraph: {
+    fontFamily: "acumin-pro, sans-serif",
+    fontWeight: "400",
+    fontStyle: "normal",
+    fontSize: "1.1em",
+    color: "#808080",
+    lineHeight: "28px",
+    marginBottom: "20px",
+  },
 }));

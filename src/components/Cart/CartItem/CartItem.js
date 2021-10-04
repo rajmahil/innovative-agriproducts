@@ -51,7 +51,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
             -
           </Button>
           <Typography className={classes.quantityNum}>
-            &nbsp;{item.quantity}&nbsp;
+            &nbsp;{item.quantity} Lb&nbsp;
           </Typography>
           <Button
             className={classes.quantityBtn}

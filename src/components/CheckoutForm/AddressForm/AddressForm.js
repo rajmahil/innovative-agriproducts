@@ -21,6 +21,7 @@ const AddressForm = ({ checkoutToken, next }) => {
   const [shippingSubdivision, setShippingSubdivision] = useState("");
   const [shippingOptions, setShippingOptions] = useState([]);
   const [shippingOption, setShippingOption] = useState("");
+  const [pickupTime, setPickupTime] = useState("");
 
   const methods = useForm();
   const classes = useStyles();
@@ -90,6 +91,7 @@ const AddressForm = ({ checkoutToken, next }) => {
               shippingSubdivision,
               shippingOption,
               shippingPrice,
+              pickupTime,
             })
           )}
         >
@@ -149,6 +151,36 @@ const AddressForm = ({ checkoutToken, next }) => {
                       {item.label}
                     </MenuItem>
                   ))}
+              </Select>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <InputLabel>Pick Up Time</InputLabel>
+              <Select
+                value={pickupTime}
+                fullWidth
+                onChange={(e) => setPickupTime(e.target.value)}
+              >
+                <MenuItem key="1" value="Monday 6pm-8pm">
+                  Monday 6pm-8pm
+                </MenuItem>
+                <MenuItem key="2" value="Tuesday 6pm-8pm">
+                  Tuesday 6pm-8pm
+                </MenuItem>
+                <MenuItem key="3" value="Wednesday 6pm-8pm">
+                  Wednesday 6pm-8pm
+                </MenuItem>
+                <MenuItem key="4" value="Thursday 6pm-8pm">
+                  Thursday 6pm-8pm
+                </MenuItem>
+                <MenuItem key="5" value="Friday 6pm-8pm">
+                  Friday 6pm-8pm
+                </MenuItem>
+                <MenuItem key="6" value="Saturday 9am-8pm">
+                  Saturday 9am-8pm
+                </MenuItem>
+                <MenuItem key="7" value="Sunday 9am-8pm">
+                  Sunday 9am-8pm
+                </MenuItem>
               </Select>
             </Grid>
           </Grid>
